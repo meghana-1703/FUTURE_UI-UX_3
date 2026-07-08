@@ -1,12 +1,12 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Dashboard from "./pages/Dashboard";
-import Clients from "./pages/Clients";
-import Pipeline from "./pages/Pipeline";
-import Tasks from "./pages/Tasks";
-import Analytics from "./pages/Analytics";
-import Campaigns from "./pages/Campaigns";
-import ClientProfile from "./pages/ClientProfile";
+import Dashboard from "./Pages/Dashboard";
+import Clients from "./Pages/Clients";
+import Pipeline from "./Pages/Pipeline";
+import Tasks from "./Pages/Tasks";
+import Analytics from "./Pages/Analytics";
+import Campaigns from "./Pages/Campaigns";
+import ClientProfile from "./Pages/ClientProfile";
 
 
 function App() {

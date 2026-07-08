@@ -1,9 +1,9 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import AnalyticsStats from "../components/AnalyticsStats";
-import ClientTierCard from "../components/ClientTierCard";
-import ChannelAttributionCard from "../components/ChannelAttributionCard";
-import RevenueChart from "../components/RevenueChart";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
+import AnalyticsStats from "../Components/AnalyticsStats";
+import ClientTierCard from "../Components/ClientTierCard";
+import ChannelAttributionCard from "../Components/ChannelAttributionCard";
+import RevenueChart from "../Components/RevenueChart";
 
 export default function Analytics() {
   return (
