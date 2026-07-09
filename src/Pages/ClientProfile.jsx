@@ -1,6 +1,6 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import ClientProfileCard from "../components/ClientProfileCard";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
+import ClientProfileCard from "../Components/ClientProfileCard";
 
 export default function ClientProfile() {
   return (
