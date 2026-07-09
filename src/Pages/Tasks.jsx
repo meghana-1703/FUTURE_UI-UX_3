@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import TaskStats from "../components/TaskStats";
-import TaskList from "../components/TaskList";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
+import TaskStats from "../Components/TaskStats";
+import TaskList from "../Components/TaskList";
 
 export default function Tasks() {
   return (
