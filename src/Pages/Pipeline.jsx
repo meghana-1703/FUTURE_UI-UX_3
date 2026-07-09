@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import PipelineBoard from "../components/PipelineBoard";
-import StatCard from "../components/StatCard";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
+import PipelineBoard from "../Components/PipelineBoard";
+import StatCard from "../Components/StatCard";
 
 import {
   DollarSign,
