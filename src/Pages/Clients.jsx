@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import ClientTable from "../components/ClientTable";
-import CampaignPerformanceCard from "../components/CampaignPerformanceCard";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
+import ClientTable from "../Components/ClientTable";
+import CampaignPerformanceCard from "../Components/CampaignPerformanceCard";
 
 export default function Clients() {
   return (
