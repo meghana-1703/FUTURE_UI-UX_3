@@ -27,7 +27,7 @@ export default function AnalyticsStats() {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-6">
+ <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
       {stats.map((item, index) => (
         <div
           key={index}
@@ -37,7 +37,7 @@ export default function AnalyticsStats() {
             {item.change}
           </p>
 
-          <h2 className="text-4xl font-bold text-white mt-2">
+          <h2 className="text-2xl md:text-4xl font-bold text-white mt-2">
             {item.value}
           </h2>
 

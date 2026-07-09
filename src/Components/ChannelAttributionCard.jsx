@@ -36,7 +36,7 @@ export default function ChannelAttributionCard() {
     <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-6 h-full">
 
       <div className="mb-6">
-        <h2 className="text-xl font-bold text-white">
+        <h2 className="text-2xl md:text-xl font-bold text-white">
           Channel Attribution (30d)
         </h2>
       </div>

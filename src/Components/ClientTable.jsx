@@ -128,7 +128,9 @@ export default function ClientTable() {
 
       </div>
 
-      <table className="w-full">
+    <div className="overflow-x-auto">
+
+<table className="min-w-[900px] w-full">
 
         <thead className="text-gray-500 text-sm">
 
@@ -229,6 +231,8 @@ export default function ClientTable() {
         </tbody>
 
       </table>
+
+    </div>
 
     </div>
   );

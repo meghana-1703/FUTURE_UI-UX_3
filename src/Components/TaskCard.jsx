@@ -7,9 +7,8 @@ export default function TaskCard({
   completed = false,
 }) {
   return (
-    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[24px] p-5 hover:border-violet-500/30 transition">
-
-      <div className="flex items-start justify-between">
+    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[24px] p-4 md:p-5 hover:border-violet-500/30 transition">
+<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
 
         <div className="flex items-start gap-4">
 
@@ -27,7 +26,7 @@ export default function TaskCard({
           <div>
 
             <h3
-              className={`font-semibold text-lg ${
+             className={`font-semibold text-base md:text-lg ${
                 completed
                   ? "text-gray-500 line-through"
                   : "text-white"

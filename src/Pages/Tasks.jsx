@@ -16,7 +16,7 @@ export default function Tasks() {
           subtitle="7 tasks — 2 due today, 1 overdue."
         />
 
-        <main className="flex-1 overflow-y-auto p-6">
+       <main className="flex-1 overflow-y-auto p-4 md:p-6">
 
           {/* Stats */}
           <TaskStats />

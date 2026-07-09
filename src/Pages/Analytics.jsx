@@ -18,19 +18,19 @@ export default function Analytics() {
           subtitle="Performance insights across all clients."
         />
 
-        <main className="flex-1 overflow-y-auto p-6">
+        <main className="flex-1 overflow-y-auto p-4 md:p-6">
 
           {/* KPI Cards */}
           <AnalyticsStats />
 
           {/* Client Tier & Channel Attribution */}
-          <div className="grid grid-cols-3 gap-6 mt-6">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-6">
 
             <div>
               <ClientTierCard />
             </div>
 
-            <div className="col-span-2">
+            <div className="xl:col-span-2">
               <ChannelAttributionCard />
             </div>
 

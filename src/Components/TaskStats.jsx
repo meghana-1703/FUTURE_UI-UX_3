@@ -18,7 +18,7 @@ export default function TaskStats() {
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
 
       {stats.map((item, index) => (
         <div
@@ -30,7 +30,7 @@ export default function TaskStats() {
             {item.title}
           </p>
 
-          <h2 className={`text-4xl font-bold mt-3 ${item.color}`}>
+          <h2 className={`text-2xl md:text-4xl font-bold mt-3 ${item.color}`}>
             {item.value}
           </h2>
 

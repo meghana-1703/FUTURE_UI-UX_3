@@ -20,7 +20,7 @@ export default function ClientDetailsCard() {
 
       </div>
 
-      <h2 className="text-3xl font-bold text-white mt-6">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mt-6">
         Nexus Digital
       </h2>
 
