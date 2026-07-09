@@ -1,5 +1,5 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
 import { Zap } from "lucide-react";
 
 export default function Campaigns() {
