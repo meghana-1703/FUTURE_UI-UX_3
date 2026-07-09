@@ -6,7 +6,7 @@ import {
 
 export default function ClientDetailsCard() {
   return (
-    <div className="bg-white/[0.04] border border-white/10 rounded-[30px] p-6">
+    <div className="bg-white/[0.04] border border-white/10 rounded-[30px] p-4 md:p-6">
 
       <div className="flex justify-between items-start">
 
@@ -30,7 +30,7 @@ export default function ClientDetailsCard() {
 
       <div className="mt-8 space-y-5">
 
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-0">
           <span className="text-gray-400">Monthly Revenue</span>
           <span className="text-white font-semibold">$18,500</span>
         </div>

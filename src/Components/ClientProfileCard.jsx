@@ -10,10 +10,10 @@ import {
 
 export default function ClientProfileCard() {
   return (
-    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-8">
+    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-4 md:p-8">
 
       {/* Header */}
-      <div className="flex items-center gap-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
 
         <div className="w-20 h-20 rounded-full bg-violet-500/20 flex items-center justify-center text-3xl font-bold text-violet-400">
           ND
@@ -36,9 +36,9 @@ export default function ClientProfileCard() {
       </div>
 
       {/* Information */}
-      <div className="grid grid-cols-2 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mt-10">
 
-        <div className="flex items-center gap-3">
+       <div className="flex items-start gap-3 min-w-0">
           <Mail className="text-violet-400" size={20} />
           <div>
             <p className="text-gray-500 text-sm">Email</p>
@@ -48,7 +48,7 @@ export default function ClientProfileCard() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-start gap-3 min-w-0">
           <Phone className="text-violet-400" size={20} />
           <div>
             <p className="text-gray-500 text-sm">Phone</p>
@@ -58,17 +58,17 @@ export default function ClientProfileCard() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+       <div className="flex items-start gap-3 min-w-0">
           <Globe className="text-violet-400" size={20} />
           <div>
             <p className="text-gray-500 text-sm">Website</p>
-            <p className="text-white">
-              www.nexusdigital.com
-            </p>
+<p className="text-white break-all">
+  contact@nexusdigital.com
+</p>
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+       <div className="flex items-start gap-3 min-w-0">
           <User className="text-violet-400" size={20} />
           <div>
             <p className="text-gray-500 text-sm">Account Manager</p>

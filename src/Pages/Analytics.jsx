@@ -4,19 +4,27 @@ import AnalyticsStats from "../Components/AnalyticsStats";
 import ClientTierCard from "../Components/ClientTierCard";
 import ChannelAttributionCard from "../Components/ChannelAttributionCard";
 import RevenueChart from "../Components/RevenueChart";
+import { useState } from "react";
 
 export default function Analytics() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="flex h-screen bg-[#0C0B14] text-white overflow-hidden">
 
-      <Sidebar />
+      <Sidebar 
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
 
       <div className="flex-1 flex flex-col overflow-hidden">
 
-        <Topbar
-          title="Analytics"
-          subtitle="Performance insights across all clients."
-        />
+<Topbar
+  isOpen={isOpen}
+  setIsOpen={setIsOpen}
+  title="Analytics"
+  subtitle="Performance insights across all clients."
+/>
 
         <main className="flex-1 overflow-y-auto p-4 md:p-6">
 

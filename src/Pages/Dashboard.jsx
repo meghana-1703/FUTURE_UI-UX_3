@@ -5,6 +5,7 @@ import RevenueChart from "../Components/RevenueChart";
 import LeadConversion from "../Components/LeadConversion";
 import ClientCard from "../Components/ClientCard";
 import Activity from "../Components/Activity";
+import { useState } from "react";
 
 
 
@@ -16,17 +17,24 @@ import {
 } from "lucide-react";
 
 export default function Dashboard() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
+    
     <div className="flex h-screen bg-[#0C0B14] text-white overflow-hidden">
 
-      <Sidebar />
+      <Sidebar
+  isOpen={isOpen}
+  setIsOpen={setIsOpen}
+/>
 
       <div className="flex-1 flex flex-col overflow-hidden">
 
         <Topbar
-          title="Dashboard Overview"
-          subtitle="Welcome back! Here's what's happening today."
-        />
+  isOpen={isOpen}
+  setIsOpen={setIsOpen}
+  title="Dashboard"
+ subtitle="Welcome back! Here's what's happening today."
+/>
 
       <main className="flex-1 overflow-y-auto p-4 md:p-6">
 
@@ -81,9 +89,9 @@ export default function Dashboard() {
           </div>
 
 {/* Clients & Activity */}
-<div className="grid grid-cols-3 gap-6 mt-6">
+<div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-6">
 
-  <div className="col-span-2">
+  <div className="xl:col-span-2">
     <ClientCard />
   </div>
 

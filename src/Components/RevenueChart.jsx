@@ -25,12 +25,12 @@ const data = [
 
 export default function RevenueChart() {
   return (
-    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-6 h-[360px]">
+    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-4 md:p-6 h-[320px] md:h-[360px]">
 
-      <div className="flex justify-between mb-8">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mb-6">
 
         <div>
-          <h2 className="text-xl font-bold text-white">
+<h2 className="text-lg md:text-xl font-bold text-white">
             Revenue Growth
           </h2>
 
@@ -39,7 +39,7 @@ export default function RevenueChart() {
           </p>
         </div>
 
-        <div className="flex gap-5 text-sm">
+      <div className="flex gap-4 text-xs md:text-sm flex-wrap">
 
           <div className="flex items-center gap-2">
             <span className="w-3 h-3 rounded-full bg-violet-500"></span>
@@ -55,7 +55,7 @@ export default function RevenueChart() {
 
       </div>
 
-      <ResponsiveContainer width="100%" height={250}>
+      <ResponsiveContainer width="100%" height="75%">
 
         <AreaChart data={data}>
 

@@ -2,6 +2,7 @@ import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
 import PipelineBoard from "../Components/PipelineBoard";
 import StatCard from "../Components/StatCard";
+import { useState } from "react";
 
 import {
   DollarSign,
@@ -11,18 +12,24 @@ import {
 } from "lucide-react";
 
 export default function Pipeline() {
+  
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex h-screen bg-[#0C0B14] text-white overflow-hidden">
 
-      <Sidebar />
+     <Sidebar
+  isOpen={isOpen}
+  setIsOpen={setIsOpen}
+/>
 
       <div className="flex-1 flex flex-col overflow-hidden">
 
-        <Topbar
-          title="Pipeline"
-          subtitle="$267K in active opportunities."
-        />
-
+       <Topbar
+  isOpen={isOpen}
+  setIsOpen={setIsOpen}
+  title="Pipeline"
+ subtitle="Track your sales pipeline."
+/>
       <main className="flex-1 overflow-y-auto p-4 md:p-6">
 
          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">

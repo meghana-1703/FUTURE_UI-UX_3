@@ -36,7 +36,7 @@ export default function ChannelAttributionCard() {
     <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-6 h-full">
 
       <div className="mb-6">
-        <h2 className="text-2xl md:text-xl font-bold text-white">
+       <h2 className="text-xl md:text-2xl font-bold text-white">
           Channel Attribution (30d)
         </h2>
       </div>
@@ -47,7 +47,7 @@ export default function ChannelAttributionCard() {
 
           <div
             key={index}
-            className="flex items-center justify-between border-b border-white/5 pb-4 last:border-0 last:pb-0"
+           className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-white/5 pb-4 last:border-0 last:pb-0"
           >
 
             <div>
@@ -62,7 +62,7 @@ export default function ChannelAttributionCard() {
 
             </div>
 
-            <div className="text-right">
+           <div className="text-left sm:text-right">
 
               <p className="text-gray-300 text-sm">
                 {channel.conversions}

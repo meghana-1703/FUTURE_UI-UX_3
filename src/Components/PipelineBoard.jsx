@@ -135,7 +135,7 @@ const pipeline = [
 export default function PipelineBoard() {
   return (
     <div className="overflow-x-auto scrollbar-hide pb-2">
-      <div className="flex gap-4 w-full">
+    <div className="flex gap-4 w-max min-w-full">
         {pipeline.map((column, index) => (
           <PipelineColumn
             key={index}

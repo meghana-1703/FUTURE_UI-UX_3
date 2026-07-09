@@ -8,7 +8,7 @@ export default function PipelineColumn({
   deals,
 }) {
   return (
-    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-5 min-w-[300px]">
+   <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[28px] p-5 w-[300px] shrink-0">
 
       {/* Header */}
 

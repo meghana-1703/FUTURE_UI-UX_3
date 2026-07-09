@@ -22,7 +22,7 @@ export default function ClientTierCard() {
 
       <div className="mb-6">
 
-        <h2 className="text-2xl md:text-xl font-bold text-white">
+       <h2 className="text-xl md:text-2xl font-bold text-white">
           Revenue by Client Tier
         </h2>
 

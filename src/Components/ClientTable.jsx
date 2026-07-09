@@ -90,7 +90,7 @@ export default function ClientTable() {
 
       {/* Search + Filters */}
 
-      <div className="p-5 border-b border-white/10 flex items-center justify-between gap-5">
+     <div className="p-5 border-b border-white/10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
 
         <div className="relative flex-1">
 
@@ -106,9 +106,9 @@ export default function ClientTable() {
 
         </div>
 
-        <div className="flex gap-3">
+ <div className="flex gap-3 overflow-x-auto pb-1">
 
-          <button className="px-5 h-11 rounded-xl bg-violet-600 text-white text-sm">
+         <button className="shrink-0 px-5 h-11 rounded-xl bg-violet-600 text-white text-sm">
             All
           </button>
 

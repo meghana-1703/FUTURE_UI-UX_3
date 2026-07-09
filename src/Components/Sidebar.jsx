@@ -27,16 +27,30 @@ const bottomMenu = [
   { icon: HelpCircle, label: "Help Center" },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({
+  isOpen,
+  setIsOpen,
+}) {
+  console.log("Sidebar props:", isOpen, setIsOpen);
     const location = useLocation();
-  return (
+return (
+<>
     <aside
-      className="w-[270px] border-r border-white/5 flex flex-col"
-      style={{
-        background: "rgba(18,17,30,.82)",
-        backdropFilter: "blur(22px)",
-        WebkitBackdropFilter: "blur(22px)",
-      }}
+  className={`
+    fixed lg:static
+    top-0 left-0
+    z-50
+    h-screen
+    w-[270px]
+    border-r border-white/5
+    flex flex-col
+    transition-transform duration-300 ease-in-out
+    ${
+      isOpen
+        ? "translate-x-0"
+        : "-translate-x-full lg:translate-x-0"
+    }
+  `}
     >
       {/* Logo */}
 
@@ -70,8 +84,9 @@ export default function Sidebar() {
           const Icon = item.icon;
 
          return (
-  <Link
-    to={
+<Link
+  onClick={() => setIsOpen(false)}
+  to={
       item.label === "Overview"
         ? "/"
         :
@@ -175,6 +190,16 @@ export default function Sidebar() {
         </div>
 
       </div>
-    </aside>
+      </aside>
+
+
+    {isOpen && (
+      <div
+        className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+        onClick={() => setIsOpen(false)}
+      />
+    )}
+
+</>
   );
 }

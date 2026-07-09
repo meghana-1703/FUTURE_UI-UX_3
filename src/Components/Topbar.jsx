@@ -1,12 +1,15 @@
-import { Search, Bell, Plus } from "lucide-react";
+import { Search, Bell, Plus, Menu } from "lucide-react";
 
 export default function Topbar({
-  title = "Dashboard Overview",
-  subtitle = "Welcome back! Here's what's happening today."
+  title,
+  subtitle,
+  isOpen,
+  setIsOpen,
 }) {
   return (
+    
     <header
-      className="flex-shrink-0 flex items-center gap-4 px-6 py-4 border-b z-10"
+    className="flex-shrink-0 flex items-center gap-3 px-4 md:px-6 py-4 border-b z-10"
       style={{
         background: "rgba(12, 11, 20, 0.8)",
         backdropFilter: "blur(16px)",
@@ -14,18 +17,28 @@ export default function Topbar({
         borderColor: "rgba(255,255,255,0.05)",
       }}
     >
+      <button
+  onClick={() => {
+    if (setIsOpen) {
+      setIsOpen(!isOpen);
+    }
+  }}
+  className="lg:hidden p-2 rounded-lg hover:bg-white/10"
+>
+  <Menu size={22} />
+</button>
 
       {/* Title */}
       <div className="flex-1">
 
         <h1
-          className="text-base font-bold text-white"
+         className="text-lg md:text-2xl font-bold text-white"
           style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
         >
           {title}
         </h1>
 
-        <p className="text-xs text-gray-400">
+        <p className="text-xs text-gray-400 truncate max-w-[180px] md:max-w-none">
           {subtitle}
         </p>
 
@@ -33,7 +46,7 @@ export default function Topbar({
 
 
       {/* Search */}
-      <div className="relative w-64">
+      <div className="relative hidden md:block w-64">
 
         <Search
           size={13}
@@ -68,7 +81,7 @@ export default function Topbar({
 
 
       {/* Button */}
-      <button className="flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-violet-600 text-white hover:bg-violet-500 transition-colors">
+      <button className="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-violet-600 text-white hover:bg-violet-500 transition-colors">
 
         <Plus size={13} />
 
