@@ -1,10 +1,10 @@
-import Topbar from "../components/Topbar";
-import Sidebar from "../components/Sidebar";
-import StatCard from "../components/StatCard";
-import RevenueChart from "../components/RevenueChart";
-import LeadConversion from "../components/LeadConversion";
-import ClientCard from "../components/ClientCard";
-import Activity from "../components/Activity";
+import Topbar from "../Components/Topbar";
+import Sidebar from "../Components/Sidebar";
+import StatCard from "../Components/StatCard";
+import RevenueChart from "../Components/RevenueChart";
+import LeadConversion from "../Components/LeadConversion";
+import ClientCard from "../Components/ClientCard";
+import Activity from "../Components/Activity";
 
 
 
